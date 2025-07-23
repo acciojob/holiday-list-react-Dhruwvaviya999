@@ -35,7 +35,12 @@ const App = () => {
     
   return (
     <div id="main">
-               {/* Do not remove the main div */}
+        {/* Do not remove the main div */}
+      <ol>
+        {indianCities.map((city, index) => (
+          <li key={`location${index + 1}`}>{city.name}</li>
+        ))}
+      </ol>
     </div>
   )
 }
